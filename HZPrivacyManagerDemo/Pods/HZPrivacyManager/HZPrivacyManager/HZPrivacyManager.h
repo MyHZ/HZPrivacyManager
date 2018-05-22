@@ -21,11 +21,11 @@ typedef void(^ReturnBlock)(BOOL isOpen);
 //是否开启相册
 + (void)openAlbumServiceWithBlock:(ReturnBlock)returnBlock;
 //是否开启麦克风
-//+ (void)openRecordServiceWithBlock:(ReturnBlock)returnBlock;
++ (void)openRecordServiceWithBlock:(ReturnBlock)returnBlock;
 //是否开启通讯录
 + (void)openContactsServiceWithBolck:(ReturnBlock)returnBolck;
 //是否开启蓝牙
-//+ (void)openPeripheralServiceWithBolck:(ReturnBlock)returnBolck;
++ (void)openPeripheralServiceWithBolck:(ReturnBlock)returnBolck;
 //是否开启日历备忘录
 + (void)openEventServiceWithBolck:(ReturnBlock)returnBolck withType:(EKEntityType)entityType;
 //是否开启互联网
