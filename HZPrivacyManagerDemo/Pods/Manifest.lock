@@ -1,0 +1,16 @@
+PODS:
+  - HZPrivacyManager (1.0.0)
+
+DEPENDENCIES:
+  - HZPrivacyManager (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HZPrivacyManager
+
+SPEC CHECKSUMS:
+  HZPrivacyManager: e7fba514d508bff5a0f6e19580206ed9efa2a1ec
+
+PODFILE CHECKSUM: f4fb791c28ccd4f172543237a1e5ef73cd98c0fd
+
+COCOAPODS: 1.5.2

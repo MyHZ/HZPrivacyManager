@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15095499E28F81D4B1DD20AEA0860B6F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C073E22DD3F726677556E13BB35D9F2D /* CoreTelephony.framework */; };
+		17EEA5D46FD84EE39CF8DFE8E7EC0F00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C500E1C74CAE55BFB2E754A035D175F /* Foundation.framework */; };
+		1D74F381B433B6306B8D4408A04CCC70 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1731595F4CA22690DFC50E29FE39523 /* AddressBookUI.framework */; };
+		257A3CEAB5D7A68C3E3AE8E608C312BC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09DB8CCBA36C6CE2412867D094156CE /* HealthKit.framework */; };
+		277B3066C137851D7956E9304D52C059 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F148AF37C5C8556F9C8E7ECBC9144119 /* MediaPlayer.framework */; };
+		2C8B63C8ED6694E7A59195B8ABD51100 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17B12E913486958832A154B1C17EADB /* Photos.framework */; };
+		3C9BF0A9BCF02B15E25C1EFDE2498568 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE008EE3D0C8F234E29A31B54EE0A05 /* AssetsLibrary.framework */; };
+		43E6F77EFEE1BEC4B08C3E7A30F65C68 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7443D91548FCB21F4E1F45ED1DECD5 /* Contacts.framework */; };
+		53510BA7343E45299D469BBE171E95DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C500E1C74CAE55BFB2E754A035D175F /* Foundation.framework */; };
+		538443C622A065268EF1812C29C94B27 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83BCAF9746E01D7E9F030EC21F1A45E /* AVFoundation.framework */; };
+		5B981EB11F477485E9442F6561CB66CF /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 066ABD34BB3559EDFAE68F8B32321CBA /* PassKit.framework */; };
+		6CC6B007B6865FB2848EB48636C7F4E9 /* Pods-HZPrivacyManagerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04183CF3039103D900F473C0C132743A /* Pods-HZPrivacyManagerDemo-dummy.m */; };
+		95D1008C3C3B19F84D2E5E6EC06B5C7F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2620BACD5C690476A6BE0E6A4A8FCA /* LocalAuthentication.framework */; };
+		A1763F713FA20DA9E319ACA83259C883 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA7D975796DAA26E7B1876179CC77C3 /* UserNotifications.framework */; };
+		A33875CD6A5D32A477793551E7195611 /* HZPrivacyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 277ABCC79261084B39F844FD3650CA36 /* HZPrivacyManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC7B56248AEDDE4945111E62FBB6D4DB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47FE35B05C007C3A5C43FD66A7200F74 /* CoreBluetooth.framework */; };
+		C2E892394CDBD13BD0C355CDBAD892E0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F747571A07B13F298CBAE657DBFBE886 /* AddressBook.framework */; };
+		D757481BAFBE9A3EDA7D840E73726A3D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5578111A06886845C750EE146BBEDC76 /* CoreLocation.framework */; };
+		E3475656675FDB357BB44FBAB897F347 /* HZPrivacyManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FDC6753BBD39ACFB1A41F5AAD4B07E /* HZPrivacyManager-dummy.m */; };
+		E8AA1F4644897E082BBE7EF94A3AD2E2 /* HZPrivacyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B86442304C55C929745CD769D34BEA /* HZPrivacyManager.m */; };
+		E984E831A0D26C07851CA8DE6DB51C6D /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213719F39F9F6B3E8653C9DDFA4FB41D /* Intents.framework */; };
+		F498EAAACD49D416C193BB3310813A6B /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9FEC959B4BAEFF75365340786DB231 /* Speech.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		944EC4F263E65A71A9F3B69CDB7AC5E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B38F9B92954D9A873A09FF58BDB09168;
+			remoteInfo = HZPrivacyManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04183CF3039103D900F473C0C132743A /* Pods-HZPrivacyManagerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HZPrivacyManagerDemo-dummy.m"; sourceTree = "<group>"; };
+		066ABD34BB3559EDFAE68F8B32321CBA /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/PassKit.framework; sourceTree = DEVELOPER_DIR; };
+		0B6317E49ABCD3D8F14FAFA4A3138459 /* libPods-HZPrivacyManagerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HZPrivacyManagerDemo.a"; path = "libPods-HZPrivacyManagerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		213719F39F9F6B3E8653C9DDFA4FB41D /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Intents.framework; sourceTree = DEVELOPER_DIR; };
+		277ABCC79261084B39F844FD3650CA36 /* HZPrivacyManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HZPrivacyManager.h; path = HZPrivacyManager/HZPrivacyManager.h; sourceTree = "<group>"; };
+		2C2620BACD5C690476A6BE0E6A4A8FCA /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/LocalAuthentication.framework; sourceTree = DEVELOPER_DIR; };
+		3202D0ACDCF9B4D2AD286772BE4FA166 /* HZPrivacyManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HZPrivacyManager-prefix.pch"; sourceTree = "<group>"; };
+		4180C927AD8CA0D13547E4D84BB53C2B /* Pods-HZPrivacyManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HZPrivacyManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		47FE35B05C007C3A5C43FD66A7200F74 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
+		50AD8EA3E1D706BF81C3C15934F2E3A1 /* Pods-HZPrivacyManagerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HZPrivacyManagerDemo-resources.sh"; sourceTree = "<group>"; };
+		5578111A06886845C750EE146BBEDC76 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		5C9FEC959B4BAEFF75365340786DB231 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Speech.framework; sourceTree = DEVELOPER_DIR; };
+		6271E4E23304D97C8B9CCAA2512EF135 /* Pods-HZPrivacyManagerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HZPrivacyManagerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		732F45C53EBE99173BD3B783CE128A5C /* Pods-HZPrivacyManagerDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HZPrivacyManagerDemo-frameworks.sh"; sourceTree = "<group>"; };
+		89F55A3D13A2C1139C51C5A532A5270F /* Pods-HZPrivacyManagerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HZPrivacyManagerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		8AA7D975796DAA26E7B1876179CC77C3 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
+		9145738C5E421455A7A81BFC52A92A66 /* HZPrivacyManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HZPrivacyManager.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93B86442304C55C929745CD769D34BEA /* HZPrivacyManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HZPrivacyManager.m; path = HZPrivacyManager/HZPrivacyManager.m; sourceTree = "<group>"; };
+		9C500E1C74CAE55BFB2E754A035D175F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9D7443D91548FCB21F4E1F45ED1DECD5 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
+		B09DB8CCBA36C6CE2412867D094156CE /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		B2966F35F2803600BEB51D04D12A2020 /* Pods-HZPrivacyManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HZPrivacyManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B54960E0D3C39D97EC96BC8F4A68A6BA /* libHZPrivacyManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHZPrivacyManager.a; path = libHZPrivacyManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE008EE3D0C8F234E29A31B54EE0A05 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		C073E22DD3F726677556E13BB35D9F2D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		C1731595F4CA22690DFC50E29FE39523 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AddressBookUI.framework; sourceTree = DEVELOPER_DIR; };
+		D17B12E913486958832A154B1C17EADB /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		D83BCAF9746E01D7E9F030EC21F1A45E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		E6FDC6753BBD39ACFB1A41F5AAD4B07E /* HZPrivacyManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HZPrivacyManager-dummy.m"; sourceTree = "<group>"; };
+		F148AF37C5C8556F9C8E7ECBC9144119 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		F747571A07B13F298CBAE657DBFBE886 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0814B0DC19D0FF8057FDE08CE1BB58B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53510BA7343E45299D469BBE171E95DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6991ED3BD1025C083AE6F842A932B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E892394CDBD13BD0C355CDBAD892E0 /* AddressBook.framework in Frameworks */,
+				1D74F381B433B6306B8D4408A04CCC70 /* AddressBookUI.framework in Frameworks */,
+				3C9BF0A9BCF02B15E25C1EFDE2498568 /* AssetsLibrary.framework in Frameworks */,
+				538443C622A065268EF1812C29C94B27 /* AVFoundation.framework in Frameworks */,
+				43E6F77EFEE1BEC4B08C3E7A30F65C68 /* Contacts.framework in Frameworks */,
+				AC7B56248AEDDE4945111E62FBB6D4DB /* CoreBluetooth.framework in Frameworks */,
+				D757481BAFBE9A3EDA7D840E73726A3D /* CoreLocation.framework in Frameworks */,
+				15095499E28F81D4B1DD20AEA0860B6F /* CoreTelephony.framework in Frameworks */,
+				17EEA5D46FD84EE39CF8DFE8E7EC0F00 /* Foundation.framework in Frameworks */,
+				257A3CEAB5D7A68C3E3AE8E608C312BC /* HealthKit.framework in Frameworks */,
+				E984E831A0D26C07851CA8DE6DB51C6D /* Intents.framework in Frameworks */,
+				95D1008C3C3B19F84D2E5E6EC06B5C7F /* LocalAuthentication.framework in Frameworks */,
+				277B3066C137851D7956E9304D52C059 /* MediaPlayer.framework in Frameworks */,
+				5B981EB11F477485E9442F6561CB66CF /* PassKit.framework in Frameworks */,
+				2C8B63C8ED6694E7A59195B8ABD51100 /* Photos.framework in Frameworks */,
+				F498EAAACD49D416C193BB3310813A6B /* Speech.framework in Frameworks */,
+				A1763F713FA20DA9E319ACA83259C883 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		062FE90DBF62F77155F91F622518151A /* Pods-HZPrivacyManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6271E4E23304D97C8B9CCAA2512EF135 /* Pods-HZPrivacyManagerDemo-acknowledgements.markdown */,
+				89F55A3D13A2C1139C51C5A532A5270F /* Pods-HZPrivacyManagerDemo-acknowledgements.plist */,
+				04183CF3039103D900F473C0C132743A /* Pods-HZPrivacyManagerDemo-dummy.m */,
+				732F45C53EBE99173BD3B783CE128A5C /* Pods-HZPrivacyManagerDemo-frameworks.sh */,
+				50AD8EA3E1D706BF81C3C15934F2E3A1 /* Pods-HZPrivacyManagerDemo-resources.sh */,
+				4180C927AD8CA0D13547E4D84BB53C2B /* Pods-HZPrivacyManagerDemo.debug.xcconfig */,
+				B2966F35F2803600BEB51D04D12A2020 /* Pods-HZPrivacyManagerDemo.release.xcconfig */,
+			);
+			name = "Pods-HZPrivacyManagerDemo";
+			path = "Target Support Files/Pods-HZPrivacyManagerDemo";
+			sourceTree = "<group>";
+		};
+		145C23D32B0F854939D0A5360D8D4C7D /* HZPrivacyManager */ = {
+			isa = PBXGroup;
+			children = (
+				277ABCC79261084B39F844FD3650CA36 /* HZPrivacyManager.h */,
+				93B86442304C55C929745CD769D34BEA /* HZPrivacyManager.m */,
+				859F22486BE5338A999A727DD7A79176 /* Support Files */,
+			);
+			name = HZPrivacyManager;
+			path = HZPrivacyManager;
+			sourceTree = "<group>";
+		};
+		20F181565CDCCDB3B39CEBA87D070D83 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				062FE90DBF62F77155F91F622518151A /* Pods-HZPrivacyManagerDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		30BA7B0BFF60AB7BE135844388D504A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				145C23D32B0F854939D0A5360D8D4C7D /* HZPrivacyManager */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A23C02BB00D461845CB0F37EB451D88F /* Frameworks */,
+				30BA7B0BFF60AB7BE135844388D504A9 /* Pods */,
+				7E6759A17821783D10EB30213352DFE4 /* Products */,
+				20F181565CDCCDB3B39CEBA87D070D83 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E6759A17821783D10EB30213352DFE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B54960E0D3C39D97EC96BC8F4A68A6BA /* libHZPrivacyManager.a */,
+				0B6317E49ABCD3D8F14FAFA4A3138459 /* libPods-HZPrivacyManagerDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		859F22486BE5338A999A727DD7A79176 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9145738C5E421455A7A81BFC52A92A66 /* HZPrivacyManager.xcconfig */,
+				E6FDC6753BBD39ACFB1A41F5AAD4B07E /* HZPrivacyManager-dummy.m */,
+				3202D0ACDCF9B4D2AD286772BE4FA166 /* HZPrivacyManager-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HZPrivacyManager";
+			sourceTree = "<group>";
+		};
+		A23C02BB00D461845CB0F37EB451D88F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF09C12AEAA7A98939808012D9C49D2D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF09C12AEAA7A98939808012D9C49D2D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F747571A07B13F298CBAE657DBFBE886 /* AddressBook.framework */,
+				C1731595F4CA22690DFC50E29FE39523 /* AddressBookUI.framework */,
+				BDE008EE3D0C8F234E29A31B54EE0A05 /* AssetsLibrary.framework */,
+				D83BCAF9746E01D7E9F030EC21F1A45E /* AVFoundation.framework */,
+				9D7443D91548FCB21F4E1F45ED1DECD5 /* Contacts.framework */,
+				47FE35B05C007C3A5C43FD66A7200F74 /* CoreBluetooth.framework */,
+				5578111A06886845C750EE146BBEDC76 /* CoreLocation.framework */,
+				C073E22DD3F726677556E13BB35D9F2D /* CoreTelephony.framework */,
+				9C500E1C74CAE55BFB2E754A035D175F /* Foundation.framework */,
+				B09DB8CCBA36C6CE2412867D094156CE /* HealthKit.framework */,
+				213719F39F9F6B3E8653C9DDFA4FB41D /* Intents.framework */,
+				2C2620BACD5C690476A6BE0E6A4A8FCA /* LocalAuthentication.framework */,
+				F148AF37C5C8556F9C8E7ECBC9144119 /* MediaPlayer.framework */,
+				066ABD34BB3559EDFAE68F8B32321CBA /* PassKit.framework */,
+				D17B12E913486958832A154B1C17EADB /* Photos.framework */,
+				5C9FEC959B4BAEFF75365340786DB231 /* Speech.framework */,
+				8AA7D975796DAA26E7B1876179CC77C3 /* UserNotifications.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65FF4D0B0C88DFB394D1E423694FCE7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33875CD6A5D32A477793551E7195611 /* HZPrivacyManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		59322B733AB436F82AEA4A072F012785 /* Pods-HZPrivacyManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A744B2C3342A607E742F95029E8B6B4 /* Build configuration list for PBXNativeTarget "Pods-HZPrivacyManagerDemo" */;
+			buildPhases = (
+				223237C7AF999A50E69CCE2B203D8F42 /* Sources */,
+				0814B0DC19D0FF8057FDE08CE1BB58B6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B910AC0CA17AA67E1B6CFAEFCA4EE255 /* PBXTargetDependency */,
+			);
+			name = "Pods-HZPrivacyManagerDemo";
+			productName = "Pods-HZPrivacyManagerDemo";
+			productReference = 0B6317E49ABCD3D8F14FAFA4A3138459 /* libPods-HZPrivacyManagerDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B38F9B92954D9A873A09FF58BDB09168 /* HZPrivacyManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C96E7940B5B5A1BC04D0E6C514A18D7 /* Build configuration list for PBXNativeTarget "HZPrivacyManager" */;
+			buildPhases = (
+				56D5C155D30979B14B77C4106C233895 /* Sources */,
+				4E6991ED3BD1025C083AE6F842A932B7 /* Frameworks */,
+				65FF4D0B0C88DFB394D1E423694FCE7E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZPrivacyManager;
+			productName = HZPrivacyManager;
+			productReference = B54960E0D3C39D97EC96BC8F4A68A6BA /* libHZPrivacyManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7E6759A17821783D10EB30213352DFE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B38F9B92954D9A873A09FF58BDB09168 /* HZPrivacyManager */,
+				59322B733AB436F82AEA4A072F012785 /* Pods-HZPrivacyManagerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		223237C7AF999A50E69CCE2B203D8F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC6B007B6865FB2848EB48636C7F4E9 /* Pods-HZPrivacyManagerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D5C155D30979B14B77C4106C233895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3475656675FDB357BB44FBAB897F347 /* HZPrivacyManager-dummy.m in Sources */,
+				E8AA1F4644897E082BBE7EF94A3AD2E2 /* HZPrivacyManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B910AC0CA17AA67E1B6CFAEFCA4EE255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HZPrivacyManager;
+			target = B38F9B92954D9A873A09FF58BDB09168 /* HZPrivacyManager */;
+			targetProxy = 944EC4F263E65A71A9F3B69CDB7AC5E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3F91B1228C4A6C68C863CFAB7A598520 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9145738C5E421455A7A81BFC52A92A66 /* HZPrivacyManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/HZPrivacyManager/HZPrivacyManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = HZPrivacyManager;
+				PRODUCT_NAME = HZPrivacyManager;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E92F4AEB4DE7527F3CF847C606B2E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2966F35F2803600BEB51D04D12A2020 /* Pods-HZPrivacyManagerDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F0A2CA4C2D9415034046F2F2F0CD8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9145738C5E421455A7A81BFC52A92A66 /* HZPrivacyManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/HZPrivacyManager/HZPrivacyManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = HZPrivacyManager;
+				PRODUCT_NAME = HZPrivacyManager;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90E0967DE7225CC6CD44AA01907FF038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4180C927AD8CA0D13547E4D84BB53C2B /* Pods-HZPrivacyManagerDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B9D45A1FA553066CCF4A9AA06C14141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A2E4C2C6CAC978F5245C3D94FA8499F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C96E7940B5B5A1BC04D0E6C514A18D7 /* Build configuration list for PBXNativeTarget "HZPrivacyManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F91B1228C4A6C68C863CFAB7A598520 /* Debug */,
+				7F0A2CA4C2D9415034046F2F2F0CD8E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E4C2C6CAC978F5245C3D94FA8499F5 /* Debug */,
+				9B9D45A1FA553066CCF4A9AA06C14141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A744B2C3342A607E742F95029E8B6B4 /* Build configuration list for PBXNativeTarget "Pods-HZPrivacyManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E0967DE7225CC6CD44AA01907FF038 /* Debug */,
+				6E92F4AEB4DE7527F3CF847C606B2E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
